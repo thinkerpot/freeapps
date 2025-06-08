@@ -1,0 +1,11 @@
+---
+const { app } = Astro.props;
+---
+<article class="border rounded-lg p-4 shadow">
+  <img src={app.image} alt={app.title} class="h-32 w-full object-cover" />
+  <h2 class="text-lg font-semibold mt-2">
+    <a href={`/apps/${app.slug}/`}>{app.title}</a>
+  </h2>
+  <p class="text-sm mb-2">{app.description}</p>
+  <a href={app.download_url} class="text-blue-500 underline">Download</a>
+</article>

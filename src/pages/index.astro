@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppCard from '../components/AppCard.astro';
+const apps = await Astro.glob('../content/*.md');
+---
+<BaseLayout title="Home">
+  <h1 class="text-2xl font-bold mb-4">Latest Apps</h1>
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {apps.map(app => <AppCard app={app.frontmatter} />)}
+  </div>
+</BaseLayout>
