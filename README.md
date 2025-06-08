@@ -2,6 +2,7 @@
 
 Welcome to **FreeApps**, a blazing-fast, SEO-friendly website for listing and downloading the best free desktop & mobile applications. Built with simplicity, performance, and scalability in mind. Powered by Astro + Tailwind + Markdown.
 
+This repository contains a minimal Astro project skeleton complete with Tailwind and an example app.
 > 📦 Repo: `thinkerpot/freeapps`  
 > 🚀 Demo: [freeapps.educentrals.com](https://freeapps.educentrals.com) (example)
 
@@ -91,6 +92,7 @@ CoolApp is a powerful tool to help you stay focused and organized...
 ```
 
 3. Done! It’ll show up automatically on the homepage or tag page.
+For a reference example, check `src/content/coolapp.md`.
 
 ---
 
